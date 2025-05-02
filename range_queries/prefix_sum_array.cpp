@@ -39,8 +39,8 @@ std::vector<int64_t> PSA(1, 0);
  * @returns void
  */
 void build(std::vector<int64_t> original_array) {
-    for (int i = 1; i <= static_cast<int>(original_array.size()); i++) {
-        PSA.push_back(PSA[i - 1] + original_array[i]);
+    for (int i = 0; i <= static_cast<int>(original_array.size()) - 1; i++) {
+        PSA.push_back(PSA[i] + original_array[i]);
     }
 }
 /**
